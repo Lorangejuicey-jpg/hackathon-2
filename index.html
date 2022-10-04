@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitch Tracker</title>
+    <link rel="stylesheet" href="styles/css/reset.css" />
+    <link rel="stylesheet" href="styles/css/index.css" />
+  </head>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="./scripts/index.js"></script>
+  <body>
+    <h1 class="heading">Hitch Tracker</h1>
+    <div class="container">
+      <div class="col first-col">
+        <form action="">
+          <label class="form-label" for="">Huidige locatie:</label>
+          <input type="text" placeholder="Campusbaan 6, Nijmegen" />
+
+          <label class="form-label" for="">Eind locatie:</label>
+          <input type="text" placeholder="Heyendaalseweg 98, Nijmegen" />
+          <button class="submit-btn" type="submit">Berekenen</button>
+        </form>
+      </div>
+      <div class="col second-col">
+        <div class="content">
+          <div class="sliders">
+            <span>€</span>
+            <label class="switch">
+              <input class="money-slider" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span>$</span>
+            <span>KM</span>
+            <label class="switch">
+              <input class="distance-slider" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span>Miles</span>
+          </div>
+          <div class="text-element">
+            <span>Totale afstand:</span>
+            <span id="total-distance" class="distance metric">0</span>
+          </div>
+          <div class="text-element">
+            <span>Huidige afstand:</span>
+            <span id="huidige-distance" class="distance metric">0</span>
+          </div>
+          <div class="text-element">
+            <span>Afgelegde afstand:</span>
+            <span id="afgelegde-distance" class="distance metric">0</span>
+          </div>
+          <div class="text-element">
+            <span>Huidige kosten:</span>
+            <span id="huidige-kosten" class="money metric">10</span>
+          </div>
+          <div class="text-element">
+            <span>Geschatte kosten:</span>
+            <span id="geschatte-kosten" class="money metric">20</span>
+          </div>
+          <h2 class="sub-heading">Totaal:</h2>
+          <div class="text-element">
+            <span>Afstand:</span>
+            <span id="afstand" class="distance metric">0</span>
+          </div>
+          <div class="text-element">
+            <span>Kosten:</span>
+            <span id="kosten" class="money metric">23</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
