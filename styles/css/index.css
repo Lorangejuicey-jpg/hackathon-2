@@ -68,6 +68,7 @@ input[type="text"]:focus {
 /* Slider */
 .sliders {
   display: flex;
+  padding-bottom: 30px;
 }
 .switch {
   position: relative;

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var MoneyCheckbox = document.querySelector(".money-slider");
   var DistanceCheckbox = document.querySelector(".distance-slider");
 
+  // Change system
   MoneyCheckbox.addEventListener("change", function () {
     if (MoneyCheckbox.checked) {
       $(document).ready(function () {
